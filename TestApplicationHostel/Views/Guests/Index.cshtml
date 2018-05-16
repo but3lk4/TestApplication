@@ -1,0 +1,52 @@
+﻿@model IEnumerable<TestApplicationHostel.Models.Guest>
+
+@{ 
+    ViewBag.Title = "Guests";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Goście</h2>
+
+@if(!Model.Any())
+{
+    <p>Nie ma żadnych gości</p>
+}
+
+else
+{
+    <table class=" table table-bordered table-hover">
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>EMail</th>
+            <th>Id</th>
+            <th>Data Urodzenia</th>
+            <th>Kod Pocztowy</th>
+            <th>Numer Telefonu</th>
+            <th>Adres Zamieszkania</th>
+            <th>Miasto</th>
+            
+        </tr>
+        <tbody>
+            @foreach(var guest in Model)
+            {
+                <tr>
+                    <td>@guest.Name</td>
+                    <td>@guest.SurName</td>
+                    <td>@guest.EMail</td>
+                    <td>@guest.ID</td>
+                    <td>@guest.DateOfBirth.Value.ToShortDateString()</td>
+                    <td>@guest.ZipCode</td>
+                    <td>@guest.PhoneNumber</td>
+                    <td>@guest.Address</td>
+                    <td>@guest.City</td>
+                </tr>
+            }
+        </tbody>
+
+                      
+
+    </table>
+}
+
+

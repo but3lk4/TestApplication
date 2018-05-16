@@ -20,6 +20,8 @@ namespace TestApplicationHostel.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Guest> Guests { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
