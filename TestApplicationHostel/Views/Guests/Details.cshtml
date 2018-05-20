@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name @Model.SurName</h2>
+
+
+<table class=" table table-bordered table-hover">
+    <tr>
+       
+        <th>EMail</th>
+        <th>Id</th>
+      
+        <th>Kod Pocztowy</th>
+        <th>Numer Telefonu</th>
+        <th>Adres Zamieszkania</th>
+        <th>Miasto</th>
+
+    </tr>
+    <tbody>
+        
+            <tr>
+               
+                <td>@Model.EMail</td>
+                <td>@Model.ID</td>
+                
+                <td>@Model.ZipCode</td>
+                <td>@Model.PhoneNumber</td>
+                <td>@Model.Address</td>
+                <td>@Model.City</td>
+            </tr>
+        
+    </tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+

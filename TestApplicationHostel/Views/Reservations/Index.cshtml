@@ -5,5 +5,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h2>Rezerwacje</h2>
+
+@if (!Model.Any())
+{
+    <p>Nie ma żadnych rezerwacji</p>
+}
+
+else
+{
+    <table class=" table table-bordered table-hover">
+        <tr>
+            <th>Kod Rezerwacji</th>
+            <th>Data zameldowania</th>
+            <th>Data wymeldowania</th>
+            <th>Id</th>
+            <th>Data Utworzenia</th>
+
+
+        </tr>
+        <tbody>
+            @foreach (var reservations in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(reservations.ReservationCode, "Details", "Reservations", new { id = reservations.ID }, null)</td>
+                    <td>@reservations.CheckInDate.Value.ToShortDateString()</td>
+                    <td>@reservations.CheckOutDate.Value.ToShortDateString()</td>
+                    <td>@reservations.ID</td>
+                    <td>@reservations.CreationDateOfReservation.Value.ToShortDateString()</td>
+
+                </tr>
+            }
+        </tbody>
+
+
+
+    </table>
+}
+
 
 

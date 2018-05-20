@@ -29,6 +29,16 @@ namespace TestApplicationHostel.Controllers
                 return View(guests);
             }
         }
+
+        public ActionResult Details(int id)
+        {
+            var guests = _context.Guests.SingleOrDefault(g => g.ID == id);
+
+            if (guests == null)
+                return HttpNotFound();
+
+            return View(guests);
+        }
        
     }
 }

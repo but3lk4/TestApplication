@@ -21,25 +21,23 @@ else
             <th>EMail</th>
             <th>Id</th>
             <th>Data Urodzenia</th>
-            <th>Kod Pocztowy</th>
-            <th>Numer Telefonu</th>
-            <th>Adres Zamieszkania</th>
-            <th>Miasto</th>
+            <th>Numer Rezerwacji</th>
+            
             
         </tr>
         <tbody>
             @foreach(var guest in Model)
             {
                 <tr>
-                    <td>@guest.Name</td>
+                    <td>@Html.ActionLink(guest.Name, "Details", "Guests", new { id = guest.ID }, null)</td>
                     <td>@guest.SurName</td>
                     <td>@guest.EMail</td>
                     <td>@guest.ID</td>
                     <td>@guest.DateOfBirth.Value.ToShortDateString()</td>
-                    <td>@guest.ZipCode</td>
-                    <td>@guest.PhoneNumber</td>
-                    <td>@guest.Address</td>
-                    <td>@guest.City</td>
+                    <td>@</td>
+                 
+                    
+                    
                 </tr>
             }
         </tbody>

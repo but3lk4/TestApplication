@@ -6,19 +6,19 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TestApplicationHostel.Models
 {
-    public class Reservation
+    public partial class Reservation
     {
         [Required]
         [StringLength (10)]
         public string ReservationCode { get; set; }
         [Required]
-        public DateTime CreationDateOfReservation { get; set; }
+        public DateTime? CreationDateOfReservation { get; set; }
         [Required]
         public float Price { get; set; }
         [Required]
-        public DateTime CheckInDate { get; set; }
+        public DateTime? CheckInDate { get; set; }
         [Required]
-        public DateTime CheckOutDate { get; set; }
+        public DateTime? CheckOutDate { get; set; }
         [Required]
         public string Currency { get; set; }
         [Required]
@@ -26,5 +26,12 @@ namespace TestApplicationHostel.Models
 
         public int Commission { get; set; }
         public string Source { get; set; }
+
+        public Reservation()
+        {
+            this.Guests = new HashSet<Guest>();
+        }
+
+        public virtual ICollection<Guest> Guests { get; set; }
     }
 }

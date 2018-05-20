@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TestApplicationHostel.Models
 {
-    public class Guest
+    public partial class Guest
     {
         [Required]
         public string Name { get; set; }
@@ -24,8 +24,16 @@ namespace TestApplicationHostel.Models
         public string Address { get; set; }
         public string City { get; set; }
 
-             
         
+        
+       public Guest()
+        {
+            this.Reservations = new HashSet<Reservation>();
+        }
+
+        public virtual ICollection<Reservation> Reservations { get; set; }
+
+
 
     }
 }
