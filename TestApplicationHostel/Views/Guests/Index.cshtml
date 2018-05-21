@@ -14,14 +14,15 @@
 
 else
 {
-    <table class=" table table-bordered table-hover">
+    <table id="guests" class=" table table-bordered table-hover">
         <tr>
             <th>Imię</th>
             <th>Nazwisko</th>
             <th>EMail</th>
             <th>Id</th>
             <th>Data Urodzenia</th>
-            <th>Numer Rezerwacji</th>
+           
+            
             
             
         </tr>
@@ -34,7 +35,8 @@ else
                     <td>@guest.EMail</td>
                     <td>@guest.ID</td>
                     <td>@guest.DateOfBirth.Value.ToShortDateString()</td>
-                    <td>@</td>
+                    <td>@guest.Reservation.ReservationCode</td>
+                    
                  
                     
                     
@@ -47,4 +49,13 @@ else
     </table>
 }
 
+@section scripts
+    {
+        <script>
+            $(document).ready(function () {
+                $("#guests").DataTable();
+               
+            });
+        </script>
+    }
 

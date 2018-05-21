@@ -27,11 +27,7 @@ namespace TestApplicationHostel.Models
         public int Commission { get; set; }
         public string Source { get; set; }
 
-        public Reservation()
-        {
-            this.Guests = new HashSet<Guest>();
-        }
+      
 
-        public virtual ICollection<Guest> Guests { get; set; }
     }
 }
