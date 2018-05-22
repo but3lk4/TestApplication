@@ -24,9 +24,9 @@ namespace TestApplicationHostel.Models
         public string Address { get; set; }
         public string City { get; set; }
 
+        public Reservation Reservation { get; set; }
         
 
-              
 
     }
 }

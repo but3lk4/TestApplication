@@ -27,7 +27,7 @@ namespace TestApplicationHostel.Models
         public int Commission { get; set; }
         public string Source { get; set; }
 
-      
+
 
     }
 }

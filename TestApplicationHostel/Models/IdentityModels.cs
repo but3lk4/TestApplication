@@ -22,6 +22,8 @@ namespace TestApplicationHostel.Models
     {
         public DbSet<Guest> Guests { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+
+       
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

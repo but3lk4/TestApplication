@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TestApplicationHostel.Models;
+using System.Data.Entity;
+
 
 namespace TestApplicationHostel.Controllers
 {
@@ -24,7 +26,7 @@ namespace TestApplicationHostel.Controllers
 
         public ViewResult Index()
         {
-            var guests = _context.Guests.ToList();
+            var guests = _context.Guests.Include(g => g.Reservation).ToList();
             {
                 return View(guests);
             }

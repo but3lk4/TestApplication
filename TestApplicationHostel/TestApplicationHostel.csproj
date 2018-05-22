@@ -253,33 +253,17 @@
     <Compile Include="Migrations\201805161821328_SettingDateTimeOfBirth1.Designer.cs">
       <DependentUpon>201805161821328_SettingDateTimeOfBirth1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805161824354_SettingDateTimeOfBirth2.cs" />
-    <Compile Include="Migrations\201805161824354_SettingDateTimeOfBirth2.Designer.cs">
-      <DependentUpon>201805161824354_SettingDateTimeOfBirth2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201805161828514_SettingDateTimeOfBirth3.cs" />
     <Compile Include="Migrations\201805161828514_SettingDateTimeOfBirth3.Designer.cs">
       <DependentUpon>201805161828514_SettingDateTimeOfBirth3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805171824367_ReservationsTableSet.cs" />
-    <Compile Include="Migrations\201805171824367_ReservationsTableSet.Designer.cs">
-      <DependentUpon>201805171824367_ReservationsTableSet.cs</DependentUpon>
+    <Compile Include="Migrations\201805221029054_RemovingErrors.cs" />
+    <Compile Include="Migrations\201805221029054_RemovingErrors.Designer.cs">
+      <DependentUpon>201805221029054_RemovingErrors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805171907420_ReservationsTableSet1.cs" />
-    <Compile Include="Migrations\201805171907420_ReservationsTableSet1.Designer.cs">
-      <DependentUpon>201805171907420_ReservationsTableSet1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805201210190_ChangingToICollection.cs" />
-    <Compile Include="Migrations\201805201210190_ChangingToICollection.Designer.cs">
-      <DependentUpon>201805201210190_ChangingToICollection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805202032089_AddingRESTService.cs" />
-    <Compile Include="Migrations\201805202032089_AddingRESTService.Designer.cs">
-      <DependentUpon>201805202032089_AddingRESTService.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805211037055_FightWitgForeignKey.cs" />
-    <Compile Include="Migrations\201805211037055_FightWitgForeignKey.Designer.cs">
-      <DependentUpon>201805211037055_FightWitgForeignKey.cs</DependentUpon>
+    <Compile Include="Migrations\201805221039121_AddedReservationNavigationIntoGuest.cs" />
+    <Compile Include="Migrations\201805221039121_AddedReservationNavigationIntoGuest.Designer.cs">
+      <DependentUpon>201805221039121_AddedReservationNavigationIntoGuest.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -563,26 +547,14 @@
     <EmbeddedResource Include="Migrations\201805161821328_SettingDateTimeOfBirth1.resx">
       <DependentUpon>201805161821328_SettingDateTimeOfBirth1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805161824354_SettingDateTimeOfBirth2.resx">
-      <DependentUpon>201805161824354_SettingDateTimeOfBirth2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805161828514_SettingDateTimeOfBirth3.resx">
       <DependentUpon>201805161828514_SettingDateTimeOfBirth3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805171824367_ReservationsTableSet.resx">
-      <DependentUpon>201805171824367_ReservationsTableSet.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805221029054_RemovingErrors.resx">
+      <DependentUpon>201805221029054_RemovingErrors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805171907420_ReservationsTableSet1.resx">
-      <DependentUpon>201805171907420_ReservationsTableSet1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805201210190_ChangingToICollection.resx">
-      <DependentUpon>201805201210190_ChangingToICollection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805202032089_AddingRESTService.resx">
-      <DependentUpon>201805202032089_AddingRESTService.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805211037055_FightWitgForeignKey.resx">
-      <DependentUpon>201805211037055_FightWitgForeignKey.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805221039121_AddedReservationNavigationIntoGuest.resx">
+      <DependentUpon>201805221039121_AddedReservationNavigationIntoGuest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

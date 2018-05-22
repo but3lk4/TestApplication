@@ -7,13 +7,13 @@ namespace TestApplicationHostel.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class ReservationsTableSet : IMigrationMetadata
+    public sealed partial class RemovingErrors : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ReservationsTableSet));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RemovingErrors));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805171824367_ReservationsTableSet"; }
+            get { return "201805221029054_RemovingErrors"; }
         }
         
         string IMigrationMetadata.Source

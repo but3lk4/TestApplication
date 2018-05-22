@@ -7,13 +7,13 @@ namespace TestApplicationHostel.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class SettingDateTimeOfBirth2 : IMigrationMetadata
+    public sealed partial class AddedReservationNavigationIntoGuest : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SettingDateTimeOfBirth2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedReservationNavigationIntoGuest));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805161824354_SettingDateTimeOfBirth2"; }
+            get { return "201805221039121_AddedReservationNavigationIntoGuest"; }
         }
         
         string IMigrationMetadata.Source
